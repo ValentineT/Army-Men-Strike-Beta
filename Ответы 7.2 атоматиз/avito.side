@@ -1,0 +1,130 @@
+{
+  "id": "5688aad2-4b9a-4e9d-bcf0-cf805f661870",
+  "version": "2.0",
+  "name": "avito",
+  "url": "https://www.avito.ru",
+  "tests": [{
+    "id": "f29547d6-b92e-4f47-a31d-c86bbbf1f22d",
+    "name": "тест кейс авито",
+    "commands": [{
+      "id": "9ba068f8-bc74-42f6-928b-bce7c09ab4c2",
+      "comment": "",
+      "command": "open",
+      "target": "/sankt-peterburg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d758f653-8420-41b4-860f-1fcf13a12bfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1032x755",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26475244-5c4a-4747-bd7d-a583c99102bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Авто",
+      "targets": [
+        ["linkText=Авто", "linkText"],
+        ["css=.top-rubricator-root-1edPo > .link-link-39EVK:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Авто')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sankt-peterburg/transport?cd=1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Авто')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63405c1a-6f71-4eae-b902-d3de65a8a085",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Автомобили",
+      "targets": [
+        ["linkText=Автомобили", "linkText"],
+        ["css=.rubricator-list-item-item_opened-1rgYx > .rubricator-list-item-submenu-11UcP > .rubricator-list-item-item-tP77G:nth-child(1) .rubricator-list-item-link-12kOm", "css:finder"],
+        ["xpath=//a[contains(text(),'Автомобили')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sankt-peterburg/avtomobili?cd=1')]", "xpath:href"],
+        ["xpath=//li/ul/li/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Автомобили')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e40c9c09-f47e-45c9-a20c-fdb4f5635f49",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BMW",
+      "targets": [
+        ["linkText=BMW", "linkText"],
+        ["css=.popular-rubricator-links-b0HPS:nth-child(2) > .popular-rubricator-row-2oc-J:nth-child(2) > .popular-rubricator-link-3112O", "css:finder"],
+        ["xpath=//a[contains(text(),'BMW')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sankt-peterburg/avtomobili/bmw?cd=1&radius=0')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BMW')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ebea6bc-867d-4606-90ad-41ab62999949",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1 серия",
+      "targets": [
+        ["linkText=1 серия", "linkText"],
+        ["css=.popular-rubricator-links-b0HPS:nth-child(2) > .popular-rubricator-row-2oc-J:nth-child(1) > .popular-rubricator-link-3112O", "css:finder"],
+        ["xpath=//a[contains(text(),'1 серия')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/sankt-peterburg/avtomobili/bmw/1?cd=1&radius=0')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1 серия')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d826828-0381-4f49-a585-4ada5bcb4f13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-select-v2 > select",
+      "targets": [
+        ["css=.form-select-v2 > select", "css:finder"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3bb562c-a4fd-4708-85fd-b615ac626d73",
+      "comment": "",
+      "command": "select",
+      "target": "css=.form-select-v2 > select",
+      "targets": [],
+      "value": "label=По умолчанию"
+    }, {
+      "id": "6468b333-66dc-4da9-8b87-0ba1770f3cd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-select-v2 option:nth-child(2)",
+      "targets": [
+        ["css=.form-select-v2 option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='1'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Дешевле')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "888b8e37-9f2d-43be-9152-abf3b93510bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-logo-3ugdk",
+      "targets": [
+        ["css=.logo-logo-3ugdk", "css:finder"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "31471b72-1bd4-4b95-a338-c9ba0911aa3b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f29547d6-b92e-4f47-a31d-c86bbbf1f22d"]
+  }],
+  "urls": ["https://www.avito.ru/"],
+  "plugins": []
+}
